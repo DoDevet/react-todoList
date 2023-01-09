@@ -18,9 +18,7 @@ export default function ReplaceTodoCategory() {
   const handleClose = (e: any) => {
     setAnchorEl(null);
   };
-
   const categoryList = useRecoilValue(categorySelector);
-  //카테고리 리스트를 받고, 버튼을 클릭하게 되면 recoil-persist의 category를 변경한다.
   return (
     <div>
       <Button
